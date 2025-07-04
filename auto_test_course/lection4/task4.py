@@ -19,7 +19,7 @@ def multiplication_chain(num):
     return count_multi
 
 
-# Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
+
 
 
 data = [
