@@ -1,5 +1,5 @@
 def modification(lst):
-    """ функцию modification(lst), принимает список
+    """ функцию modification(lst), принимает список lst
     и меняет местами его первый и последний элемент."""
 
     lst[0],lst[-1] = lst[-1], lst[0]

@@ -3,6 +3,7 @@
 # [1, 0, 1, 2, 0, 1, 3]  => [1, 1, 2, 1, 3, 0, 0]
 
 def move_zeros(lst):
+    """Функция move_zeros принимает список lst возвращает список lst где все нули перенесены в конец списка """
     counter_zero = lst.count(0)
     for _ in range(counter_zero):
         lst.remove(0)

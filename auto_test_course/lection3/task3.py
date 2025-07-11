@@ -1,5 +1,6 @@
 def even_sum(lst):
-    """Функция принимает список и подсчитывает сумму его элементов с чётным индексом"""
+    """Функция even_sum
+    принимает список lst и возвращает sum_list сумму его элементов с чётным индексом"""
     sum_list = sum([num for i, num in enumerate(lst) if i % 2 == 0])
     return sum_list
 

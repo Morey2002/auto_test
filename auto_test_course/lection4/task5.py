@@ -14,6 +14,8 @@
 # [4] => 1 вышел, 4 остался последним т.е. выжившим - это наш ответ survivor.
 
 def josephus_task(num_people, kill_num):
+    """Функия josephus_task принимает два параметра колличество воинов в кругу num_people
+    и номер воина который будет убит следующим kill_num возвращает warrios[0] последнего выжившего"""
     warrios = list(range(1, num_people + 1))
     index = 0
     while len(warrios) > 1:
