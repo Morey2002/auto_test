@@ -1,0 +1,29 @@
+def flatten_and_sort(array):
+    """функиця принимает двумерный массив array и возвращает result_list плоский список
+        в порядке возрастания элементов"""
+
+    sort_list = []
+    for sublist in array:
+        sort_list.extend(sublist)
+        result_list = sorted(sort_list)
+
+    return result_list
+
+
+
+data = [
+    [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]],
+    [[], []],
+    [[], [1]],
+    [[1, 3, 5], [100], [2, 4, 6]]
+]
+
+test_data = [
+    [1, 2, 3, 4, 5, 6, 7, 8, 9], [], [1], [1, 2, 3, 4, 5, 6, 100]
+]
+
+
+for i, d in enumerate(data):
+    assert flatten_and_sort(d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
+    print(f'Тестовый набор {d} прошёл проверку')
+print('Всё ок')
