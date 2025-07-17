@@ -11,7 +11,7 @@ def which_triangle(a, b, c):
     else:
         return 'Обычный'
 
-    return type_triangle
+
 
 
 

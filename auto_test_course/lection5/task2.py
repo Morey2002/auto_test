@@ -7,6 +7,7 @@
 
 
 def repeats(our_str):
+    """функцию repeats принимает на вход строку our_str выводит количество символов в строке"""
     char_count = {}
     new_str = []
     for char in our_str:

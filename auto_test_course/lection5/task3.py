@@ -19,6 +19,9 @@
 
 
 def everything_for_your_cat(cats_data):
+    """Функция получает на вход список кортежей,
+     каждый кортеж состоит из Кличка котика, Возраст котика, Имя покупателя, Фамилия покупателя  cats_data
+     Выводит Имя_покупателя Фамилия_покупателя: Кличка_котика1, Возраст; ...; Кличка_котикаN, Возрас"""
     owners = {}
     for name, age, first, last in cats_data:
         owners.setdefault((first, last), []).append(f"{name}, {age}")
