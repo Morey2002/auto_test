@@ -27,7 +27,7 @@ def max_division_by_3(num):
                 if new_num > max_num:
                     max_num = new_num
 
-    return max_num if max_num != -1 else num
+    return max_num
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

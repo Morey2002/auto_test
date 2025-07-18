@@ -5,7 +5,7 @@ def flatten_and_sort(array):
     sort_list = []
     for sublist in array:
         sort_list.extend(sublist)
-        result_list = sorted(sort_list)
+    result_list = sorted(sort_list)
 
     return result_list
 

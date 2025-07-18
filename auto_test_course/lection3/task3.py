@@ -1,8 +1,7 @@
 def even_sum(lst):
     """Функция even_sum
     принимает список lst и возвращает sum_list сумму его элементов с чётным индексом"""
-    sum_list = sum([num for i, num in enumerate(lst) if i % 2 == 0])
-    return sum_list
+    return sum(lst[::2])
 
 
 data = [

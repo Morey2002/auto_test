@@ -5,10 +5,10 @@ def multiplication_chain(num):
     count_multi = 0
     while num >= 10:
         digit = [int(i) for i in str(num)]
-        chislo = 1
+        number = 1
         for i in digit:
-            chislo *= i
-        num = chislo
+            number *= i
+        num = number
         count_multi += 1
     return count_multi
 
